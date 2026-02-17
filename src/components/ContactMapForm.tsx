@@ -27,7 +27,7 @@ const ContactMapForm = () => {
           <div className="w-[420px] h-[480px] rounded-xl overflow-hidden border border-gray-200 shadow-sm ml-20">
             <iframe
               title="Google Map"
-              src="https://www.google.com/maps?q=New%20York&t=&z=11&ie=UTF8&iwloc=&output=embed"
+              src="https://www.google.com/maps?q=Riyadh%20Saudi%20Arabia&output=embed"
               className="h-full border-0 w-[420px]"
               loading="lazy"
             />

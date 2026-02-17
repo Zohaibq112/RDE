@@ -53,28 +53,7 @@ const SaltEdiblePage: React.FC = () => {
 </section>
 
 
-<section data-aos="fade-up" className="py-24 bg-blue-50">
-  <div className="px-6 mx-auto text-center max-w-7xl">
-    <h2 className="mb-6 text-3xl font-bold text-blue-700">
-      Our Products
-    </h2>
 
-    <p className="max-w-2xl mx-auto mb-10 text-slate-600">
-      Download our complete Himalayan Salt product catalog including edible,
-      industrial, animal, and custom packaging options.
-    </p>
-
-    <a
-      href="/public/Salt.pdf"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="inline-flex items-center gap-3 px-10 py-4 text-sm font-medium text-white transition bg-blue-600 rounded-full hover:bg-blue-700"
-    >
-      Download Product Catalog (PDF)
-      <FaArrowRight />
-    </a>
-  </div>
-</section>
 
       {/* WHO WE ARE */}
     {/* WHO WE ARE */}
@@ -123,6 +102,29 @@ const SaltEdiblePage: React.FC = () => {
       </div>
 
     </div>
+  </div>
+</section>
+
+<section data-aos="fade-up" className="py-24 bg-blue-50">
+  <div className="px-6 mx-auto text-center max-w-7xl">
+    <h2 className="mb-6 text-3xl font-bold text-blue-700">
+      Our Products
+    </h2>
+
+    <p className="max-w-2xl mx-auto mb-10 text-slate-600">
+      Download our complete Himalayan Salt product catalog including edible,
+      industrial, animal, and custom packaging options.
+    </p>
+
+    <a
+      href="/public/Salt.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-flex items-center gap-3 px-10 py-4 text-sm font-medium text-white transition bg-blue-600 rounded-full hover:bg-blue-700"
+    >
+      Download Product Catalog (PDF)
+      <FaArrowRight />
+    </a>
   </div>
 </section>
 
