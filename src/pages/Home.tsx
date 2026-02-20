@@ -14,8 +14,8 @@ const Home = () => {
   return (
     <>
       <Hero />
-      <CompanySection />
       <CompanySection2 />
+      <CompanySection />
       <DirectorMessage />
       <DrillingProcess />
       <StatsSection/>
