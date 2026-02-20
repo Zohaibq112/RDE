@@ -14,7 +14,7 @@ const CompanySection2 = () => {
 
             {/* Heading */}
             <h2 className="mt-6 text-3xl font-bold leading-snug text-gray-900 md:text-4xl">
-             Precision Drilling & Crushing
+             Drilling & Blasting
             </h2>
 
             {/* Description */}
