@@ -15,27 +15,27 @@ const ContactMapForm = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log(form); // hook API / email service here
+    console.log(form); // Connect API or email service here
   };
 
   return (
-    <section data-aos="fade-up" className="py-20 bg-white">
+    <section data-aos="fade-up" className="py-14 sm:py-16 lg:py-20 bg-white">
       <div className="px-4 mx-auto max-w-7xl">
-        <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
-
+        <div className="grid items-center grid-cols-1 gap-10 lg:gap-16 lg:grid-cols-2">
+          
           {/* LEFT: MAP */}
-          <div className="w-[420px] h-[480px] rounded-xl overflow-hidden border border-gray-200 shadow-sm ml-20">
+          <div className="w-full h-[300px] sm:h-[380px] lg:h-[480px] rounded-xl overflow-hidden border border-gray-200 shadow-sm">
             <iframe
               title="Google Map"
               src="https://www.google.com/maps?q=Riyadh%20Saudi%20Arabia&output=embed"
-              className="h-full border-0 w-[420px]"
+              className="w-full h-full border-0"
               loading="lazy"
             />
           </div>
 
           {/* RIGHT: FORM */}
           <div>
-            <h2 className="text-3xl font-bold text-gray-900 md:text-4xl">
+            <h2 className="text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl">
               Let’s start a conversation
             </h2>
 
@@ -57,8 +57,8 @@ const ContactMapForm = () => {
                   value={form.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 mt-2 text-sm border border-gray-300 rounded-lg outline-none focus:border-blue-600 focus:ring-2 focus:ring-blue-100"
                   placeholder="John Doe"
+                  className="w-full px-4 py-3 mt-2 text-sm border border-gray-300 rounded-lg outline-none focus:border-blue-600 focus:ring-2 focus:ring-blue-100"
                 />
               </div>
 
@@ -73,8 +73,8 @@ const ContactMapForm = () => {
                   value={form.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 mt-2 text-sm border border-gray-300 rounded-lg outline-none focus:border-blue-600 focus:ring-2 focus:ring-blue-100"
                   placeholder="you@example.com"
+                  className="w-full px-4 py-3 mt-2 text-sm border border-gray-300 rounded-lg outline-none focus:border-blue-600 focus:ring-2 focus:ring-blue-100"
                 />
               </div>
 
@@ -89,15 +89,15 @@ const ContactMapForm = () => {
                   value={form.message}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 mt-2 text-sm border border-gray-300 rounded-lg outline-none resize-none focus:border-blue-600 focus:ring-2 focus:ring-blue-100"
                   placeholder="Tell us about your project..."
+                  className="w-full px-4 py-3 mt-2 text-sm border border-gray-300 rounded-lg outline-none resize-none focus:border-blue-600 focus:ring-2 focus:ring-blue-100"
                 />
               </div>
 
               {/* Button */}
               <button
                 type="submit"
-                className="inline-flex items-center justify-center px-6 py-3 font-medium text-white transition bg-blue-600 rounded-lg shadow-md hover:bg-blue-700"
+                className="inline-flex w-full sm:w-auto items-center justify-center px-6 py-3 font-medium text-white transition bg-blue-600 rounded-lg shadow-md hover:bg-blue-700"
               >
                 Send Message →
               </button>

@@ -10,7 +10,8 @@ const StatsSection = () => {
   return (
     <section data-aos="fade-up" className="bg-gradient-to-b from-[#f7f8fa] to-white border-t border-gray-200 py-14">
       <div className="px-5 mx-auto max-w-7xl">
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-2 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+
 
           <Stat icon={<GiDrill />} value={12} label="Years of Industry Experience" suffix="+" />
 
