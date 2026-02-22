@@ -1,19 +1,29 @@
 import { useState } from "react";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
+
+type MediaItem = {
+  id: number;
+  src: string;
+  type: "image" | "video";
+};
+
 const Gallery = () => {
-  const images = [
-    { id: 1, src: "/gallery1.jpeg" },
-    { id: 2, src: "/gallery2.jpeg" },
-    { id: 3, src: "/gallery3.jpeg" },
-    { id: 4, src: "/gallery4.jpeg" },
-    { id: 5, src: "/gallery5.jpeg" },
-    { id: 6, src: "/gallery6.jpeg" },
+  const media: MediaItem[] = [
+   { id: 1, src: "/gallery1.mp4", type: "video" },
+    { id: 2, src: "/gallery2.mp4", type: "video" },
+    { id: 3, src: "/gallery3.mp4", type: "video" },
+    { id: 4, src: "/gallery4.jpeg", type: "image" },
+    { id: 5, src: "/gallery5.jpeg", type: "image" },
+    { id: 6, src: "/gallery6.jpeg", type: "image" },
+
+    // Add videos like this
+ 
   ];
 
-  const [activeImage, setActiveImage] = useState<string | null>(null);
+  const [activeMedia, setActiveMedia] = useState<MediaItem | null>(null);
 
   return (
-    <section data-aos="fade-up" className="py-20 bg-white ">
+    <section data-aos="fade-up" className="py-20 bg-white">
       <div className="px-4 mx-auto max-w-7xl">
 
         {/* Header */}
@@ -30,27 +40,47 @@ const Gallery = () => {
           </p>
         </div>
 
-        {/* Gallery */}
+        {/* Gallery Grid */}
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {images.map((img) => (
+          {media.map((item) => (
             <div
-              key={img.id}
-              onClick={() => setActiveImage(img.src)}
+              key={item.id}
+              onClick={() => setActiveMedia(item)}
               className="relative overflow-hidden transition-all duration-300 bg-white border border-blue-100 shadow-sm cursor-pointer group rounded-xl hover:shadow-lg"
             >
-              <img
-                src={img.src}
-                alt="Project"
-                className="object-cover w-full h-64 transition-transform duration-500 group-hover:scale-105"
-              />
+              {item.type === "image" ? (
+                <img
+                  src={item.src}
+                  alt="Project"
+                  className="object-cover w-full h-64 transition-transform duration-500 group-hover:scale-105"
+                />
+              ) : (
+                <video
+                  src={item.src}
+                  className="object-cover w-full h-64 transition-transform duration-500 group-hover:scale-105"
+                  muted
+                />
+              )}
+
+              {/* Overlay */}
               <div className="absolute inset-0 transition duration-300 bg-blue-900/0 group-hover:bg-blue-900/20" />
+
+              {/* Play icon for videos */}
+              {item.type === "video" && (
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="px-3 py-1 text-sm text-white bg-blue-700 rounded-md shadow">
+                    ▶ Play
+                  </div>
+                </div>
+              )}
             </div>
           ))}
         </div>
 
         {/* Button */}
         <div className="text-center mt-14">
-          <Link to="/Gallery"
+          <Link
+            to="/Gallery"
             className="px-8 py-3 font-medium text-white transition-colors duration-300 bg-blue-700 rounded-lg shadow-md hover:bg-blue-800"
           >
             View More Projects
@@ -59,20 +89,29 @@ const Gallery = () => {
       </div>
 
       {/* Lightbox */}
-      {activeImage && (
+      {activeMedia && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center px-4 bg-blue-900/80"
-          onClick={() => setActiveImage(null)}
+          onClick={() => setActiveMedia(null)}
         >
           <div
             className="w-full max-w-4xl overflow-hidden bg-white shadow-2xl rounded-xl"
             onClick={(e) => e.stopPropagation()}
           >
-            <img
-              src={activeImage}
-              alt="Expanded"
-              className="object-contain w-full h-auto"
-            />
+            {activeMedia.type === "image" ? (
+              <img
+                src={activeMedia.src}
+                alt="Expanded"
+                className="object-contain w-full h-auto"
+              />
+            ) : (
+              <video
+                src={activeMedia.src}
+                controls
+                autoPlay
+                className="w-full h-auto"
+              />
+            )}
           </div>
         </div>
       )}
