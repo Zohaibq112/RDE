@@ -20,10 +20,10 @@ const Gallery = () => {
  
   ];
 
-  const [activeMedia, setActiveMedia] = useState<MediaItem | null>(null);
+    const [activeMedia, setActiveMedia] = useState<MediaItem | null>(null);
 
   return (
-    <section data-aos="fade-up" className="py-20 bg-white">
+    <section className="py-20 bg-white">
       <div className="px-4 mx-auto max-w-7xl">
 
         {/* Header */}
@@ -34,13 +34,9 @@ const Gallery = () => {
           <h2 className="mt-2 text-3xl font-bold text-blue-800 md:text-4xl">
             Project Gallery
           </h2>
-          <p className="max-w-2xl mx-auto mt-4 text-gray-500">
-            A professional showcase of our recent work, highlighting quality
-            and precision.
-          </p>
         </div>
 
-        {/* Gallery Grid */}
+        {/* Gallery */}
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {media.map((item) => (
             <div
@@ -57,22 +53,15 @@ const Gallery = () => {
               ) : (
                 <video
                   src={item.src}
-                  className="object-cover w-full h-64 transition-transform duration-500 group-hover:scale-105"
+                  autoPlay
+                  loop
                   muted
+                  playsInline
+                  className="object-cover w-full h-64 transition-transform duration-500 group-hover:scale-105"
                 />
               )}
 
-              {/* Overlay */}
               <div className="absolute inset-0 transition duration-300 bg-blue-900/0 group-hover:bg-blue-900/20" />
-
-              {/* Play icon for videos */}
-              {item.type === "video" && (
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="px-3 py-1 text-sm text-white bg-blue-700 rounded-md shadow">
-                    ▶ Play
-                  </div>
-                </div>
-              )}
             </div>
           ))}
         </div>
@@ -107,8 +96,11 @@ const Gallery = () => {
             ) : (
               <video
                 src={activeMedia.src}
-                controls
                 autoPlay
+                loop
+                muted
+                playsInline
+                controls
                 className="w-full h-auto"
               />
             )}
