@@ -1,6 +1,7 @@
 import { FaMapMarkerAlt, FaEnvelope, FaPhone, FaArrowRight } from "react-icons/fa";
 import React from "react";
 import { Link } from "react-router-dom";
+import Salt from "../components/Salt.pdf";  
 
 const SaltEdiblePage: React.FC = () => {
   return (
@@ -117,7 +118,7 @@ const SaltEdiblePage: React.FC = () => {
     </p>
 
     <a
-      href="/public/Salt.pdf"
+      href={Salt}
       target="_blank"
       rel="noopener noreferrer"
       className="inline-flex items-center gap-3 px-10 py-4 text-sm font-medium text-white transition bg-blue-600 rounded-full hover:bg-blue-700"
