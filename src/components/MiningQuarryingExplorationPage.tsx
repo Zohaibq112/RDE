@@ -3,7 +3,6 @@ import { FaArrowRight, FaSearchLocation, FaMountain, FaTools } from "react-icons
 import StateSection from "./StatsSection";
 import Gallery from "./Gallery";
 import { Link } from "react-router-dom";
-import RDE from "../components/RDE.pdf";
 
 const MiningQuarryingExplorationPage: React.FC = () => {
   return (
@@ -56,13 +55,13 @@ const MiningQuarryingExplorationPage: React.FC = () => {
             decision-making before full-scale operations begin.
           </p>
           <a
-      href={RDE}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="inline-flex items-center gap-2 px-8 py-3 mt-10 text-sm font-medium text-white transition bg-blue-600 rounded-full hover:bg-blue-700"
-    >
-      Download Company Profile (PDF)
-    </a>
+          href="https://drive.google.com/drive/home?dmr=1&ec=wgc-drive-%5Bmodule%5D-goto"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 px-8 py-3 mt-10 text-sm font-medium text-white transition bg-blue-600 rounded-full hover:bg-blue-700"
+        >
+          Download Company Profile (PDF)
+        </a>
         </div>
       </section>
       <StateSection />

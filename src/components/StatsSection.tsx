@@ -1,26 +1,47 @@
 import {
   GiRoad,
-  GiDrill,
   GiFactory,
   GiAchievement,
+  
 } from "react-icons/gi";
 import { useEffect, useRef, useState } from "react";
+import { GiMining } from "react-icons/gi";
 
 const StatsSection = () => {
   return (
-    <section data-aos="fade-up" className="bg-gradient-to-b from-[#f7f8fa] to-white border-t border-gray-200 py-14">
+    <section
+      data-aos="fade-up"
+      className="bg-gradient-to-b from-[#f7f8fa] to-white border-t border-gray-200 py-14"
+    >
       <div className="px-5 mx-auto max-w-7xl">
         <div className="grid grid-cols-2 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <Stat
+            icon={<GiMining  />}
+            value={12}
+            label="Years of Industry Experience"
+            suffix="+"
+          />
 
+          <Stat
+            icon={<GiRoad />}
+            value={500}
+            label="Projects Successfully Completed"
+            suffix="+"
+          />
 
-          <Stat icon={<GiDrill />} value={12} label="Years of Industry Experience" suffix="+" />
+          <Stat
+            icon={<GiFactory />}
+            value={50}
+            label="Active Sites & Operations"
+            suffix="+"
+          />
 
-          <Stat icon={<GiRoad />} value={500} label="Projects Successfully Completed" suffix="+" />
-
-          <Stat icon={<GiFactory />} value={50} label="Active Sites & Operations" suffix="+" />
-
-          <Stat icon={<GiAchievement />} value={100} label="Safety Compliance Rate" suffix="%" />
-
+          <Stat
+            icon={<GiAchievement />}
+            value={100}
+            label="Safety Compliance Rate"
+            suffix="%"
+          />
         </div>
       </div>
     </section>
@@ -46,31 +67,44 @@ const Stat = ({
   const started = useRef(false);
 
   useEffect(() => {
+    const element = ref.current;
+    if (!element) return;
+
+    let animationFrame: number;
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting && !started.current) {
           started.current = true;
 
-          let start = 0;
           const duration = 1400;
-          const increment = Math.ceil(value / (duration / 16));
+          const startTime = performance.now();
 
-          const counter = setInterval(() => {
-            start += increment;
-            if (start >= value) {
-              setCount(value);
-              clearInterval(counter);
-            } else {
-              setCount(start);
+          const animate = (currentTime: number) => {
+            const progress = Math.min(
+              (currentTime - startTime) / duration,
+              1
+            );
+
+            setCount(Math.floor(progress * value));
+
+            if (progress < 1) {
+              animationFrame = requestAnimationFrame(animate);
             }
-          }, 16);
+          };
+
+          animationFrame = requestAnimationFrame(animate);
         }
       },
       { threshold: 0.4 }
     );
 
-    if (ref.current) observer.observe(ref.current);
-    return () => observer.disconnect();
+    observer.observe(element);
+
+    return () => {
+      observer.disconnect();
+      cancelAnimationFrame(animationFrame);
+    };
   }, [value]);
 
   return (
@@ -87,8 +121,11 @@ const Stat = ({
       <div className="mt-6">
         <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-[#0b3ea9] to-[#1e66ff] bg-clip-text text-transparent">
           {count.toLocaleString()}
-          <span className="text-xl font-semibold md:text-2xl">{suffix}</span>
+          <span className="text-xl font-semibold md:text-2xl">
+            {suffix}
+          </span>
         </div>
+
         <p className="mt-2 text-sm leading-snug text-gray-600 md:text-base">
           {label}
         </p>

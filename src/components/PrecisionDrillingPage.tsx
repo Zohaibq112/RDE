@@ -4,7 +4,6 @@ import Gallery from "./Gallery";
 import StatsSection from "./StatsSection";
 import PartnersMarquee from "./PartnersMarquee";
 import { Link } from "react-router-dom";
-import RDE from "../components/RDE.pdf";
 
 const PrecisionDrillingPage: React.FC = () => {
   return (
@@ -61,7 +60,7 @@ const PrecisionDrillingPage: React.FC = () => {
 
     {/* PDF LINK */}
     <a
-      href={RDE}
+      href="https://drive.google.com/file/d/1TdKUpNM9EJxxXJcFxP5NsgjF5S6vhxT3/view?usp=sharing"
       target="_blank"
       rel="noopener noreferrer"
       className="inline-flex items-center gap-2 px-8 py-3 mt-10 text-sm font-medium text-white transition bg-blue-600 rounded-full hover:bg-blue-700"
