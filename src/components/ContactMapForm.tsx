@@ -7,6 +7,7 @@ const ContactMapForm = () => {
     message: "",
   });
 
+  // FIXED: handleChange function
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -19,15 +20,15 @@ const ContactMapForm = () => {
   };
 
   return (
-    <section data-aos="fade-up" className="py-14 sm:py-16 lg:py-20 bg-white">
+    <section data-aos="fade-up" className="bg-white py-14 sm:py-16 lg:py-20">
       <div className="px-4 mx-auto max-w-7xl">
         <div className="grid items-center grid-cols-1 gap-10 lg:gap-16 lg:grid-cols-2">
           
           {/* LEFT: MAP */}
           <div className="w-full h-[300px] sm:h-[380px] lg:h-[480px] rounded-xl overflow-hidden border border-gray-200 shadow-sm">
             <iframe
-              title="Google Map"
-              src="https://www.google.com/maps?q=Riyadh%20Saudi%20Arabia&output=embed"
+              title="B17 Islamabad Map"
+              src="https://www.google.com/maps?q=B17%20Islamabad%20Pakistan&output=embed"
               className="w-full h-full border-0"
               loading="lazy"
             />
@@ -97,7 +98,7 @@ const ContactMapForm = () => {
               {/* Button */}
               <button
                 type="submit"
-                className="inline-flex w-full sm:w-auto items-center justify-center px-6 py-3 font-medium text-white transition bg-blue-600 rounded-lg shadow-md hover:bg-blue-700"
+                className="inline-flex items-center justify-center w-full px-6 py-3 font-medium text-white transition bg-blue-600 rounded-lg shadow-md sm:w-auto hover:bg-blue-700"
               >
                 Send Message →
               </button>

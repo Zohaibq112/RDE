@@ -1,5 +1,5 @@
 import { FaMapMarkerAlt, FaEnvelope, FaPhone, FaArrowRight } from "react-icons/fa";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const ContactSection = () => {
   return (
@@ -11,8 +11,8 @@ const ContactSection = () => {
           {/* LEFT: MAP */}
           <div className="w-full h-[420px] lg:h-[500px] rounded-xl overflow-hidden border shadow-sm">
             <iframe
-              title="Saudi Arabia Map"
-              src="https://www.google.com/maps?q=Riyadh%20Saudi%20Arabia&output=embed"
+              title="Pakistan Map"
+              src="https://www.google.com/maps?q=Islamabad%20Pakistan&output=embed"
               className="w-full h-full border-0"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
@@ -42,11 +42,11 @@ const ContactSection = () => {
               {/* Address */}
               <InfoItem
                 icon={<FaMapMarkerAlt />}
-                title="Headquarters"
+                title="Head Office"
                 text={
-                  <>
-                    King Fahd Road, Al Olaya District<br />
-                    Riyadh 12211, Saudi Arabia
+                   <>
+                    B-17 Multi Gardens<br />
+                    Islamabad, Pakistan
                   </>
                 }
               />
@@ -57,8 +57,8 @@ const ContactSection = () => {
                 title="Email Us"
                 text={
                   <>
-                    info@rockdrill.co<br />
-                    support@rockdrill.co
+                    info@rockdrill.pk<br />
+                    support@rockdrill.pk
                   </>
                 }
               />
@@ -69,8 +69,8 @@ const ContactSection = () => {
                 title="Call Us"
                 text={
                   <>
-                    +966 11 555 4567<br />
-                    Sun–Thu, 9am – 6pm (KSA)
+                    +92 300 1234567<br />
+                    Mon–Sat, 9am – 6pm (PKT)
                   </>
                 }
               />
@@ -79,7 +79,10 @@ const ContactSection = () => {
 
             {/* CTA */}
             <div className="mt-14">
-              <Link to="/contact" className="inline-flex items-center gap-3 px-8 py-4 text-sm font-semibold text-white transition bg-blue-600 rounded-full shadow-md hover:bg-blue-700">
+              <Link
+                to="/contact"
+                className="inline-flex items-center gap-3 px-8 py-4 text-sm font-semibold text-white transition bg-blue-600 rounded-full shadow-md hover:bg-blue-700"
+              >
                 Schedule a Consultation <FaArrowRight />
               </Link>
             </div>

@@ -12,7 +12,7 @@ const ContactInfoSection = () => {
             icon={<FaPhoneAlt />}
             title="Phone"
             lines={[
-              "+966 55 954 5820"
+              "+92 123456789"
             ]}
           />
 
