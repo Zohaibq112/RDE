@@ -143,7 +143,7 @@ const SaltDecorPage: React.FC = () => {
                 <div className="h-[500px] rounded-md overflow-hidden border ml-16 w-[500px]">
                   <iframe
                     title="Saudi Arabia Map"
-                    src="https://www.google.com/maps?q=Riyadh%20Saudi%20Arabia&output=embed"
+                    src="https://www.google.com/maps?q=Islamabad%20Pakistan&output=embed"
                     className="w-full h-full border-0"
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
@@ -172,8 +172,8 @@ const SaltDecorPage: React.FC = () => {
                       <div>
                         <p className="font-semibold text-gray-900">Headquarters</p>
                         <p className="text-sm text-gray-500">
-                          King Fahd Road, Al Olaya District<br />
-                          Riyadh 12211, Saudi Arabia
+                          B-17 Multi Gardens<br />
+                          Islamabad, Pakistan
                         </p>
                       </div>
                     </div>
@@ -200,8 +200,8 @@ const SaltDecorPage: React.FC = () => {
                       <div>
                         <p className="font-semibold text-gray-900">Call Us</p>
                         <p className="text-sm text-gray-500">
-                          +966 11 555 4567<br />
-                          Sun–Thu, 9am – 6pm (KSA)
+                          +92 23456789<br />
+                          Sun–Thu, 9am – 6pm (PKT)
                         </p>
                       </div>
                     </div>
