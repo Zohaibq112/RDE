@@ -1,4 +1,3 @@
-import React from "react";
 import { FaIndustry, FaTruck, FaCogs, FaWarehouse, FaCube, FaTools } from "react-icons/fa";
 import Gallery from "./Gallery";
 import StatsSection from "./StatsSection";

@@ -1,5 +1,4 @@
 import { FaMapMarkerAlt, FaEnvelope, FaPhone, FaArrowRight } from "react-icons/fa";
-import React from "react";
 import { Link } from "react-router-dom";
 
 const SaltEdiblePage: React.FC = () => {

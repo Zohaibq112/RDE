@@ -1,5 +1,5 @@
-import React, { useState } from "react";
 import ContactSection from "./ContactSection";
+import { useState } from "react";
 
 type Category =
   | "All"

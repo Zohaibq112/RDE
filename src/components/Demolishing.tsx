@@ -1,4 +1,3 @@
-import React from "react";
 import { FaHammer, FaHardHat, FaBuilding, FaWarehouse, FaTools, FaRecycle } from "react-icons/fa";
 import Gallery from "./Gallery";
 import StatsSection from "./StatsSection";
