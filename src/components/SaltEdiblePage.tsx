@@ -46,7 +46,7 @@ const SaltEdiblePage: React.FC = () => {
       making it suitable for culinary, industrial, and wellness applications.
     </p>
 
-    <Link to="/SaltDecor" className="inline-flex items-center gap-2 px-8 py-3 mt-10 text-sm font-medium text-white transition bg-blue-600 rounded-full hover:bg-blue-700">
+    <Link to="/services/SaltDecor" className="inline-flex items-center gap-2 px-8 py-3 mt-10 text-sm font-medium text-white transition bg-blue-600 rounded-full hover:bg-blue-700">
       About Himalayan Salt
     </Link>
   </div>
@@ -135,15 +135,15 @@ const SaltEdiblePage: React.FC = () => {
                     <div className="grid items-start grid-cols-1 gap-28 lg:grid-cols-2">
             
                       {/* LEFT: MAP */}
-                      <div className="h-[500px] rounded-md overflow-hidden border ml-16 w-[500px]">
-                        <iframe
-                          title="Saudi Arabia Map"
-                          src="https://www.google.com/maps?q=Riyadh%20Saudi%20Arabia&output=embed"
-                          className="w-full h-full border-0"
-                          loading="lazy"
-                          referrerPolicy="no-referrer-when-downgrade"
-                        />
-                      </div>
+                        <div className="h-[500px] rounded-md overflow-hidden border ml-16 w-[500px]">
+                  <iframe
+                    title="Saudi Arabia Map"
+                    src="https://www.google.com/maps?q=Islamabad%20Pakistan&output=embed"
+                    className="w-full h-full border-0"
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  />
+                </div>
             
                       {/* RIGHT: CONTENT */}
                       <div>
@@ -167,9 +167,9 @@ const SaltEdiblePage: React.FC = () => {
                             <div>
                               <p className="font-semibold text-gray-900">Headquarters</p>
                               <p className="text-sm text-gray-500">
-                                King Fahd Road, Al Olaya District<br />
-                                Riyadh 12211, Saudi Arabia
-                              </p>
+                          B-17 Multi Gardens<br />
+                          Islamabad, Pakistan
+                        </p>
                             </div>
                           </div>
             

@@ -55,21 +55,18 @@ const Footer = () => {
           <h4 className="mb-6 text-sm font-semibold tracking-wide text-white uppercase">
             Our Services
           </h4>
-          <ul className="space-y-3 text-sm">
-            <FooterNav to="/drilling">
-              Mining & Quarrying Exploration
-            </FooterNav>
-            <FooterNav to="/consultant">
-              Consultancy & Contracting
-            </FooterNav>
-            <FooterNav to="/SaltDecor">
-              Salt Decor
-            </FooterNav>
-             <FooterNav to="/SaltEdible">
-              Salt Edible
-            </FooterNav>
-            
-          </ul>
+       <ul className="space-y-3 text-sm">
+  <FooterNav to="/services/Exploration">Exploration</FooterNav>
+  <FooterNav to="/services/Mining">Mining & Quarrying Exploration</FooterNav>
+  <FooterNav to="/services/SaltDecor">Salt Decor</FooterNav>
+  <FooterNav to="/services/SaltEdible">Salt Edible</FooterNav>
+  <FooterNav to="/services/Drilling">Drilling & Blasting Services</FooterNav>
+  <FooterNav to="/services/roads">Road & Infrastructure</FooterNav>
+  <FooterNav to="/services/dams">Dams Construction</FooterNav>
+  <FooterNav to="/services/Demolishing">Demolishing</FooterNav>
+  <FooterNav to="/services/crushers">Crushers</FooterNav>
+  <FooterNav to="/services/water-infrastructure">Well Water Pipe Line & Pump Station Construction</FooterNav>
+</ul>
         </div>
 
         {/* NEWSLETTER */}

@@ -28,7 +28,7 @@ Our operations support road construction, quarry development, cement plants, and
 
             {/* Button */}
             <Link to="/Drilling" className="inline-flex items-center gap-3 px-8 py-3 mt-8 text-sm font-semibold tracking-wider text-white uppercase transition bg-blue-600 hover:bg-blue-700">
-              About Drilling & Crushing
+              About Drilling & Blasting
               <span className="text-lg">›</span>
             </Link>
           </div>

@@ -1,5 +1,5 @@
 
-import PrecisionDrillingPage from '../components/PrecisionDrillingPage'
+import PrecisionDrillingPage from '../components/PrecisionDrilling'
 
 const PrecisionDrilling = () => {
   return (

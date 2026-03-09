@@ -10,7 +10,7 @@ const QualityAssurancePage: React.FC = () => {
       {/* HERO */}
       <section data-aos="fade-up" className="relative h-[520px]">
         <img
-          src="/quality.png"
+          src="/Quality.png"
           alt="Quality Assurance"
           className="object-cover w-full h-full"
         />

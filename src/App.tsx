@@ -13,7 +13,13 @@ import Consultant from "./pages/Consultant";
 import GalleryP from "./pages/GalleryP";
 import Quality from "./pages/Quality";
 import WhatsAppFloat from "./components/WhatsAppFloat.tsx"
-import Mining from "./pages/Mining";
+import Exploration from "./pages/Exploration.tsx";
+import MiningQuarryPage from "./pages/MiningQuarryPage.tsx";
+import Roads from "./components/Roads.tsx";
+import Dams from "./components/Dams.tsx";
+import Demolishing from "./components/Demolishing.tsx";
+import Crusherspage from "./pages/Crusherspage.tsx";
+import WaterInfrastructurePage from "./pages/WaterInfrastructurePage.tsx";
 
 function App() {
   AOS.init({
@@ -30,13 +36,20 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/Contact" element={<Contact />} />
             <Route path="/About" element={<About />} />
-            <Route path="/SaltDecor" element={<SaltDecor />} />
-             <Route path="/SaltEdible" element={<SaltEdiblePage1 />} />
-            <Route path="/Drilling" element={<PrecisionDrilling />} />
+            <Route path="/services/SaltDecor" element={<SaltDecor />} />
+             <Route path="/services/SaltEdible" element={<SaltEdiblePage1 />} />
+            <Route path="/services/Drilling" element={<PrecisionDrilling />} />
+             <Route path="/Drilling" element={<PrecisionDrilling />} />
             <Route path="/Consultant" element={<Consultant/>} />
             <Route path="/Gallery" element={<GalleryP/>} />
             <Route path="/Quality" element={<Quality/>} />
-             <Route path="/Mining" element={<Mining/>} />
+             <Route path="/services/Exploration" element={<Exploration />} />
+             <Route path="/services/Mining" element={<MiningQuarryPage />} />
+             <Route path="/services/roads" element={<Roads />} />
+             <Route path="/services/dams" element={<Dams />} />
+             <Route path="/services/Demolishing" element={<Demolishing />} />
+             <Route path="/services/Crushers" element={<Crusherspage />} />
+             <Route path="/services/water-infrastructure" element={<WaterInfrastructurePage />} />
             
       </Routes>
       <Footer />

@@ -73,10 +73,16 @@ const Header = () => {
               ${servicesOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-2"}`}
             >
               <ul className="min-w-[280px] bg-white shadow-xl rounded-lg py-2 border border-gray-100">
-                <DropdownItem to="/Drilling">Mining & Quarrying Exploration</DropdownItem>
-                <DropdownItem to="/Consultant">Consultancy & Contracting</DropdownItem>
-                <DropdownItem to="/SaltDecor">Salt Decor</DropdownItem>
-                <DropdownItem to="/SaltEdible">Salt Edible</DropdownItem>
+                <DropdownItem to="/services/Exploration">Exploration</DropdownItem>
+                <DropdownItem to="/services/Mining">Mining & Quarrying Exploration</DropdownItem>
+                <DropdownItem to="/services/SaltDecor">Salt Decor</DropdownItem>
+                <DropdownItem to="/services/SaltEdible">Salt Edible</DropdownItem>
+                <DropdownItem to="/services/Drilling">Drilling & Blasting Services</DropdownItem>
+                <DropdownItem to="/services/roads">Road & Infrastructure</DropdownItem>
+                <DropdownItem to="/services/dams">Dams Construction</DropdownItem>
+                <DropdownItem to="/services/Demolishing">Demolishing</DropdownItem>
+                <DropdownItem to="/services/crushers">Crushers</DropdownItem>
+                <DropdownItem to="/services/water-infrastructure">Well Water Pipe Line & Pump Station Construction</DropdownItem>
               </ul>
             </div>
           </li>

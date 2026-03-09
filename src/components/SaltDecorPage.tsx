@@ -127,7 +127,7 @@ const SaltDecorPage: React.FC = () => {
       aesthetic for homes, hotels, and workplaces.
     </p>
 
-    <Link to="/SaltEdible" className="inline-flex items-center gap-2 px-8 py-3 mt-10 text-sm font-medium text-white transition bg-blue-600 rounded-full hover:bg-blue-700">
+    <Link to="/services/SaltEdible" className="inline-flex items-center gap-2 px-8 py-3 mt-10 text-sm font-medium text-white transition bg-blue-600 rounded-full hover:bg-blue-700">
       About Himalayan Salt
       <FaArrowRight />
     </Link>
