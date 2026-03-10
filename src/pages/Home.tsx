@@ -7,7 +7,6 @@ import StatsSection from "../components/StatsSection";
 import ServicesSection from "../components/ServicesSection";
 import PartnersMarquee from "../components/PartnersMarquee";
 import ContactSection from "../components/ContactSection";
-import ClientTestimonials from "../components/ClientTestimonials";
 import Gallery from "../components/Gallery";
 
 const Home = () => {
