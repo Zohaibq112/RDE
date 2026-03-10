@@ -22,8 +22,7 @@ const Home = () => {
       <ServicesSection/>
       <PartnersMarquee />
       <ContactSection />
-      <Gallery />
-      <ClientTestimonials />     
+      <Gallery />  
     </>
   );
 };
