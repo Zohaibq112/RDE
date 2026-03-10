@@ -141,17 +141,19 @@ const SaltDecorPage: React.FC = () => {
       
                 {/* LEFT: MAP */}
                 <div className="h-[500px] rounded-md overflow-hidden border ml-16 w-[500px]">
-                  <iframe
-                    title="Saudi Arabia Map"
-                    src="https://www.google.com/maps?q=Islamabad%20Pakistan&output=embed"
-                    className="w-full h-full border-0"
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                  />
-                </div>
+
       
                 {/* RIGHT: CONTENT */}
-                <div>
+                <div className="h-[500px] rounded-md overflow-hidden border ml-16 w-[500px]">
+  <iframe
+    title="Rock Drill Engineers Location"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3319.8430556538337!2d72.8305879!3d33.6871278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfa3ba24dbc775%3A0xa185c63ebc53291d!2sROCK%20DRILL%20ENGINEERS%20PVT%20LIMITED!5e0!3m2!1sen!2s!4v1773141974891!5m2!1sen!2s"
+    className="w-full h-full border-0"
+    allowFullScreen
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+  ></iframe>
+</div>
                   <h2 className="text-3xl font-bold text-gray-900">
                     Let's start a conversation
                   </h2>
@@ -200,7 +202,7 @@ const SaltDecorPage: React.FC = () => {
                       <div>
                         <p className="font-semibold text-gray-900">Call Us</p>
                         <p className="text-sm text-gray-500">
-                          +92 23456789<br />
+                          +92 301 5600599<br />
                           Sun–Thu, 9am – 6pm (PKT)
                         </p>
                       </div>

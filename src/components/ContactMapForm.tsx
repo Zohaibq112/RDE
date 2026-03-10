@@ -25,14 +25,16 @@ const ContactMapForm = () => {
         <div className="grid items-center grid-cols-1 gap-10 lg:gap-16 lg:grid-cols-2">
           
           {/* LEFT: MAP */}
-          <div className="w-full h-[300px] sm:h-[380px] lg:h-[480px] rounded-xl overflow-hidden border border-gray-200 shadow-sm">
-            <iframe
-              title="B17 Islamabad Map"
-              src="https://www.google.com/maps?q=B17%20Islamabad%20Pakistan&output=embed"
-              className="w-full h-full border-0"
-              loading="lazy"
-            />
-          </div>
+   <div className="h-[500px] rounded-md overflow-hidden border ml-16 w-[500px]">
+  <iframe
+    title="Rock Drill Engineers Location"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3319.8430556538337!2d72.8305879!3d33.6871278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfa3ba24dbc775%3A0xa185c63ebc53291d!2sROCK%20DRILL%20ENGINEERS%20PVT%20LIMITED!5e0!3m2!1sen!2s!4v1773141974891!5m2!1sen!2s"
+    className="w-full h-full border-0"
+    allowFullScreen
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+  ></iframe>
+</div>
 
           {/* RIGHT: FORM */}
           <div>
