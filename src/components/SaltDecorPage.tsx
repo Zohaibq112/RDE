@@ -174,8 +174,7 @@ const SaltDecorPage: React.FC = () => {
                       <div>
                         <p className="font-semibold text-gray-900">Headquarters</p>
                         <p className="text-sm text-gray-500">
-                          B-17 Multi Gardens<br />
-                          Islamabad, Pakistan
+                          Paragon Arcade Multi Garden B17 Office#309, Block B Multi Gardens B-17, Islamabad, 42230, Pakistan
                         </p>
                       </div>
                     </div>
@@ -203,6 +202,7 @@ const SaltDecorPage: React.FC = () => {
                         <p className="font-semibold text-gray-900">Call Us</p>
                         <p className="text-sm text-gray-500">
                           +92 301 5600599<br />
+                          +92 321 9517088<br />
                           Sun–Thu, 9am – 6pm (PKT)
                         </p>
                       </div>

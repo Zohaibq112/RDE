@@ -24,14 +24,14 @@ const StatsSection = () => {
 
           <Stat
             icon={<GiRoad />}
-            value={500}
+            value={50}
             label="Projects Successfully Completed"
             suffix="+"
           />
 
           <Stat
             icon={<GiFactory />}
-            value={50}
+            value={5}
             label="Active Sites & Operations"
             suffix="+"
           />

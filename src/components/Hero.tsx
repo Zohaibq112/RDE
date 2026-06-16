@@ -22,12 +22,12 @@ const Hero = () => {
         <div className="max-w-4xl text-center text-white">
 
           {/* Heading */}
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-snug md:leading-tight tracking-wide uppercase">
-            We Are Contractors and Consultants in Mining Quarrying and Exploration
+          <h1 className="text-2xl font-bold leading-snug tracking-wide uppercase sm:text-3xl md:text-4xl md:leading-tight">
+            We Are Contractors and Consultants in Mining Exploration, Quarry Development & Operations
           </h1>
 
           {/* Description */}
-          <p className="max-w-2xl mx-auto mt-4 sm:mt-5 md:mt-6 text-sm sm:text-base md:text-lg leading-relaxed text-gray-300">
+          <p className="max-w-2xl mx-auto mt-4 text-sm leading-relaxed text-gray-300 sm:mt-5 md:mt-6 sm:text-base md:text-lg">
             We work across mining exploration mining execution and quarry development, 
             offering end to end consultancy and contracting services. 
             Our approach combines technical expertise operational control and industry 

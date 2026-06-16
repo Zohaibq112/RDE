@@ -80,7 +80,6 @@ const Header = () => {
                 <DropdownItem to="/services/Drilling">Drilling & Blasting Services</DropdownItem>
                 <DropdownItem to="/services/roads">Road & Infrastructure</DropdownItem>
                 <DropdownItem to="/services/dams">Dams Construction</DropdownItem>
-                <DropdownItem to="/services/Demolishing">Demolishing</DropdownItem>
                 <DropdownItem to="/services/crushers">Crushers</DropdownItem>
                 <DropdownItem to="/services/water-infrastructure">Well Water Pipe Line & Pump Station Construction</DropdownItem>
               </ul>

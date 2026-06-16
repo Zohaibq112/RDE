@@ -63,7 +63,6 @@ const Footer = () => {
   <FooterNav to="/services/Drilling">Drilling & Blasting Services</FooterNav>
   <FooterNav to="/services/roads">Road & Infrastructure</FooterNav>
   <FooterNav to="/services/dams">Dams Construction</FooterNav>
-  <FooterNav to="/services/Demolishing">Demolishing</FooterNav>
   <FooterNav to="/services/crushers">Crushers</FooterNav>
   <FooterNav to="/services/water-infrastructure">Well Water Pipe Line & Pump Station Construction</FooterNav>
 </ul>

@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
         {/* 🔹 LEFT: BIG IMAGE */}
         <div>
           <img
-            src="/salt-big.png"
+            src="/himalayan.jpg"
             alt="Himalayan Salt"
             className="w-full h-[450px] object-cover rounded-md"
           />
@@ -21,7 +21,7 @@ import { Link } from "react-router-dom";
           </span>
 
           <h2 className="mt-4 text-3xl font-bold leading-tight text-gray-900">
-            Authentic Himalayan Pink Salt
+            Authentic Himalayan Pink Salt Exporter
           </h2>
 
           <p className="mt-4 leading-relaxed text-gray-600">

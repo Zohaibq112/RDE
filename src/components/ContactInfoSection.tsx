@@ -12,7 +12,9 @@ const ContactInfoSection = () => {
             icon={<FaPhoneAlt />}
             title="Phone"
             lines={[
-              "+92 301 5600599"
+              "+92 301 5600599",
+              "+92 321 9517088"
+              
             ]}
           />
 
@@ -31,8 +33,7 @@ const ContactInfoSection = () => {
             icon={<FaMapMarkerAlt />}
             title="Address"
             lines={[
-              "Industrial Area, Phase 2",
-              "Islamabad, Pakistan",
+             "Paragon Arcade Multi Garden B17 Office#309, Block B Multi Gardens B-17, Islamabad, 42230, Pakistan"
             ]}
           />
 

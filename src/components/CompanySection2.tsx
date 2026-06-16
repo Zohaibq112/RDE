@@ -36,7 +36,7 @@ Our operations support road construction, quarry development, cement plants, and
           {/* RIGHT IMAGE */}
           <div>
             <img
-              src="/Company.png"
+              src="/hero.jpeg"
               alt="Construction machinery"
               className="w-full mr-4 rounded shadow-lg"
             />

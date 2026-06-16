@@ -17,7 +17,6 @@ import Exploration from "./pages/Exploration.tsx";
 import MiningQuarryPage from "./pages/MiningQuarryPage.tsx";
 import Roads from "./components/Roads.tsx";
 import Dams from "./components/Dams.tsx";
-import Demolishing from "./components/Demolishing.tsx";
 import Crusherspage from "./pages/Crusherspage.tsx";
 import WaterInfrastructurePage from "./pages/WaterInfrastructurePage.tsx";
 
@@ -47,7 +46,6 @@ function App() {
              <Route path="/services/Mining" element={<MiningQuarryPage />} />
              <Route path="/services/roads" element={<Roads />} />
              <Route path="/services/dams" element={<Dams />} />
-             <Route path="/services/Demolishing" element={<Demolishing />} />
              <Route path="/services/Crushers" element={<Crusherspage />} />
              <Route path="/services/water-infrastructure" element={<WaterInfrastructurePage />} />
             

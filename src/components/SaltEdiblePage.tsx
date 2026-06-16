@@ -166,8 +166,7 @@ const SaltEdiblePage: React.FC = () => {
                             <div>
                               <p className="font-semibold text-gray-900">Headquarters</p>
                               <p className="text-sm text-gray-500">
-                          B-17 Multi Gardens<br />
-                          Islamabad, Pakistan
+                         Paragon Arcade Multi Garden B17 Office#309, Block B Multi Gardens B-17, Islamabad, 42230, Pakistan
                         </p>
                             </div>
                           </div>

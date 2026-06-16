@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const ContactSection = () => {
   return (
-    <section data-aos="fade-up" className="py-16 md:py-24 bg-white">
+    <section data-aos="fade-up" className="py-16 bg-white md:py-24">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
 
         <div className="grid items-start grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-20">
@@ -31,7 +31,7 @@ const ContactSection = () => {
               Let’s Start a Conversation
             </h2>
 
-            <p className="max-w-md mt-4 md:mt-5 leading-relaxed text-slate-600 text-sm md:text-base">
+            <p className="max-w-md mt-4 text-sm leading-relaxed md:mt-5 text-slate-600 md:text-base">
               Whether you’re planning a new project or need expert guidance,
               our team is ready to assist you with reliable engineering
               solutions.
@@ -45,8 +45,7 @@ const ContactSection = () => {
                 title="Head Office"
                 text={
                   <>
-                    B-17 Multi Gardens<br />
-                    Islamabad, Pakistan
+                   Paragon Arcade Multi Garden B17 Office#309, Block B Multi Gardens B-17, Islamabad, 42230, Pakistan
                   </>
                 }
               />
@@ -68,6 +67,7 @@ const ContactSection = () => {
                 text={
                   <>
                     +92 301 5600599<br />
+                    +92 321 9517088<br />
                     Mon–Sat, 9am – 6pm (PKT)
                   </>
                 }
@@ -79,7 +79,7 @@ const ContactSection = () => {
             <div className="mt-10 md:mt-14">
               <Link
                 to="/contact"
-                className="inline-flex items-center gap-3 px-6 py-3 md:px-8 md:py-4 text-sm font-semibold text-white transition bg-blue-600 rounded-full shadow-md hover:bg-blue-700"
+                className="inline-flex items-center gap-3 px-6 py-3 text-sm font-semibold text-white transition bg-blue-600 rounded-full shadow-md md:px-8 md:py-4 hover:bg-blue-700"
               >
                 Schedule a Consultation <FaArrowRight />
               </Link>
@@ -107,11 +107,11 @@ const InfoItem = ({
   text: React.ReactNode;
 }) => (
   <div className="flex items-start gap-4 md:gap-5">
-    <div className="flex items-center justify-center text-blue-600 bg-blue-100 rounded-full w-10 h-10 md:w-11 md:h-11 shrink-0">
+    <div className="flex items-center justify-center w-10 h-10 text-blue-600 bg-blue-100 rounded-full md:w-11 md:h-11 shrink-0">
       {icon}
     </div>
     <div>
-      <p className="font-semibold text-slate-900 text-sm md:text-base">{title}</p>
+      <p className="text-sm font-semibold text-slate-900 md:text-base">{title}</p>
       <p className="text-sm leading-relaxed text-slate-600">{text}</p>
     </div>
   </div>

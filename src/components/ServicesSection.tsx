@@ -7,7 +7,6 @@ const ServicesSection = () => {
     { image: "/drilling.jpeg", title: "Drilling and Blasting Services", link: "/services/Drilling" },
     { image: "/roads.jpg", title: "Road & Infrastructure", link: "/services/roads" },
     { image: "/dasm.jpg", title: "Dams Construction", link: "/services/dams" },
-    { image: "/Demolishing.jpg", title: "Demolishing", link: "/services/Demolishing" },
     { image: "/gallery8.jpeg", title: "Crushers", link: "/services/crushers" },
     { image: "/service3.png", title: "Himalayan Stone Products", link: "/services/SaltDecor" },
     { image: "/Well.jpeg", title: "Well Water Pipe Line & Pump Station Construction", link: "/services/water-infrastructure" },
