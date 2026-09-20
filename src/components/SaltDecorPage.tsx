@@ -174,7 +174,7 @@ const SaltDecorPage: React.FC = () => {
                       <div>
                         <p className="font-semibold text-gray-900">Headquarters</p>
                         <p className="text-sm text-gray-500">
-                          Paragon Arcade Multi Garden B17 Office#309, Block B Multi Gardens B-17, Islamabad, 42230, Pakistan
+                          Alain Arcade Multi Garden B17 Office#309, Block B Multi Gardens B-17, Islamabad, 42230, Pakistan
                         </p>
                       </div>
                     </div>

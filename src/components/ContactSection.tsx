@@ -45,7 +45,7 @@ const ContactSection = () => {
                 title="Head Office"
                 text={
                   <>
-                   Paragon Arcade Multi Garden B17 Office#309, Block B Multi Gardens B-17, Islamabad, 42230, Pakistan
+                   Alain Arcade Multi Garden B17 Office#309, Block B Multi Gardens B-17, Islamabad, 42230, Pakistan
                   </>
                 }
               />
@@ -67,6 +67,7 @@ const ContactSection = () => {
                 text={
                   <>
                     +92 301 5600599<br />
+                    +92 300 5337889<br />
                     +92 321 9517088<br />
                     Mon–Sat, 9am – 6pm (PKT)
                   </>

@@ -33,7 +33,7 @@ const ContactInfoSection = () => {
             icon={<FaMapMarkerAlt />}
             title="Address"
             lines={[
-             "Paragon Arcade Multi Garden B17 Office#309, Block B Multi Gardens B-17, Islamabad, 42230, Pakistan"
+             "Alain Arcade Multi Garden B17 Office#309, Block B Multi Gardens B-17, Islamabad, 42230, Pakistan"
             ]}
           />
 
