@@ -23,8 +23,8 @@ const ContactInfoSection = () => {
             icon={<FaEnvelope />}
             title="Email"
             lines={[
-              "info@yourcompany.com",
-              "support@yourcompany.com",
+              "tahir@rockdrill.com.pk",
+              "Adnan@rockdrill.com.pk",
             ]}
           />
 
