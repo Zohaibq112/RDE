@@ -55,8 +55,8 @@ const ContactSection = () => {
                 title="Email Us"
                 text={
                   <>
-                    info@rockdrill.pk<br />
-                    support@rockdrill.pk
+                    adnan@rockdrill.com.pk<br />
+                    tahir@rockdrill.com.pk
                   </>
                 }
               />

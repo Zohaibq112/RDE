@@ -6,7 +6,7 @@ const WhatsAppFloat = () => {
 
   const handleWhatsAppClick = () => {
     window.open(
-      "https://wa.me/966559545820?text=Hello,%20I%20would%20like%20to%20discuss%20your%20drilling%20and%20contracting%20services.",
+      "https://wa.me/923015600599?text=Hello,%20I%20would%20like%20to%20discuss%20your%20drilling%20and%20contracting%20services.",
       "_blank"
     );
   };
@@ -14,12 +14,12 @@ const WhatsAppFloat = () => {
   return (
     <>
       {/* Floating Container */}
-      <div className="fixed bottom-6 right-6 z-50">
+      <div className="fixed z-50 bottom-6 right-6">
         {/* Expanded Panel */}
         {isExpanded && (
-          <div className="mb-4 w-80 rounded-lg border border-gray-200 bg-white shadow-xl animate-scale-in">
+          <div className="mb-4 bg-white border border-gray-200 rounded-lg shadow-xl w-80 animate-scale-in">
             {/* Header */}
-            <div className="flex items-center justify-between rounded-t-lg bg-green-600 p-4 text-white">
+            <div className="flex items-center justify-between p-4 text-white bg-green-600 rounded-t-lg">
               <div>
                 <h4 className="text-sm font-semibold">
                   Industrial Drilling & Consulting
@@ -32,18 +32,18 @@ const WhatsAppFloat = () => {
                 onClick={() => setIsExpanded(false)}
                 className="text-white/80 hover:text-white"
               >
-                <X className="h-5 w-5" />
+                <X className="w-5 h-5" />
               </button>
             </div>
 
             {/* Content */}
-            <div className="space-y-3 p-4 text-sm">
-              <div className="rounded-lg bg-gray-100 p-3 text-gray-800">
+            <div className="p-4 space-y-3 text-sm">
+              <div className="p-3 text-gray-800 bg-gray-100 rounded-lg">
                 We provide reliable and efficient solutions for industrial and
                 geological projects.
               </div>
 
-              <div className="rounded-lg bg-gray-100 p-3">
+              <div className="p-3 bg-gray-100 rounded-lg">
                 <ul className="space-y-1 text-xs text-gray-700">
                   <li>✔ Rock & Core Drilling Services</li>
                   <li>✔ Quarrying & Mining Support</li>
@@ -53,19 +53,19 @@ const WhatsAppFloat = () => {
                 </ul>
               </div>
 
-              <div className="rounded-lg bg-gray-100 p-3 text-gray-800">
+              <div className="p-3 text-gray-800 bg-gray-100 rounded-lg">
                 Contact us directly on WhatsApp to discuss your project or
                 request a quotation.
               </div>
             </div>
 
             {/* CTA */}
-            <div className="border-t border-gray-200 p-4">
+            <div className="p-4 border-t border-gray-200">
               <button
                 onClick={handleWhatsAppClick}
-                className="flex w-full items-center justify-center space-x-2 rounded-lg bg-green-600 px-4 py-2 font-semibold text-white transition-colors duration-200 hover:bg-green-700"
+                className="flex items-center justify-center w-full px-4 py-2 space-x-2 font-semibold text-white transition-colors duration-200 bg-green-600 rounded-lg hover:bg-green-700"
               >
-                <MessageCircle className="h-4 w-4" />
+                <MessageCircle className="w-4 h-4" />
                 <span>Start Project Discussion</span>
               </button>
             </div>
@@ -75,25 +75,25 @@ const WhatsAppFloat = () => {
         {/* Floating Button */}
         <button
           onClick={() => setIsExpanded(!isExpanded)}
-          className="group relative rounded-full bg-green-600 p-4 text-white shadow-2xl transition-all duration-300 hover:scale-110 hover:bg-green-700"
+          className="relative p-4 text-white transition-all duration-300 bg-green-600 rounded-full shadow-2xl group hover:scale-110 hover:bg-green-700"
         >
           {/* Icon */}
-          <MessageCircle className="relative z-10 h-6 w-6" />
+          <MessageCircle className="relative z-10 w-6 h-6" />
 
           {/* Badge */}
-          <div className="absolute -right-2 -top-2 z-20 flex h-6 w-6 items-center justify-center rounded-full bg-red-500 text-xs font-bold text-white animate-pulse">
+          <div className="absolute z-20 flex items-center justify-center w-6 h-6 text-xs font-bold text-white bg-red-500 rounded-full -right-2 -top-2 animate-pulse">
             1
           </div>
 
           {/* Ping Ring */}
-          <div className="absolute inset-0 -z-10 rounded-full bg-green-600 opacity-70 animate-ping" />
+          <div className="absolute inset-0 bg-green-600 rounded-full -z-10 opacity-70 animate-ping" />
         </button>
       </div>
 
       {/* Teaser Bubble */}
       {!isExpanded && (
-        <div className="fixed bottom-24 right-6 z-40 animate-fade-in">
-          <div className="max-w-xs rounded-lg bg-white px-4 py-2 text-sm text-gray-700 shadow-lg">
+        <div className="fixed z-40 bottom-24 right-6 animate-fade-in">
+          <div className="max-w-xs px-4 py-2 text-sm text-gray-700 bg-white rounded-lg shadow-lg">
             Need drilling, quarrying, or consulting services?  
             Let’s discuss your project.
           </div>
