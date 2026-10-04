@@ -23,7 +23,7 @@ const Hero = () => {
 
           {/* Heading */}
           <h1 className="text-2xl font-bold leading-snug tracking-wide uppercase sm:text-3xl md:text-4xl md:leading-tight">
-            We are contractors and consultants in Operations, Quarry Development, and Mining Exploration.
+            We are contractors and consultants in Exploration, Mining, and Quarry Development & Operations.
           </h1>
 
           {/* Description */}
